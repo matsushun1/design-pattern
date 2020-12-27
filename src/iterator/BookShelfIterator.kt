@@ -1,4 +1,4 @@
-package iterator.books
+package iterator
 
 /**
  * BookShelfクラスのスキャンを行うConcreteIterator
