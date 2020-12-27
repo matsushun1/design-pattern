@@ -1,4 +1,4 @@
-package iterator.books
+package iterator
 
 /**
  * 集合体に対応するIteratorを１個作成するためのもの。

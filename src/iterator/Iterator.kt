@@ -1,4 +1,4 @@
-package iterator.books
+package iterator
 
 /**
  * 要素を順番にスキャンするAPI役

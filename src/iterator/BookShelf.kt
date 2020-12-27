@@ -1,7 +1,4 @@
-package iterator.books
-
-import java.util.*
-import kotlin.collections.ArrayList
+package iterator
 
 /**
  * 本棚が集合体であることを宣言する
