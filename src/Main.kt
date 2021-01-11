@@ -1,6 +1,6 @@
-import prototype.decorate.Execute
+import builder.text.BuilderExec
 
 fun main(args: Array<String>) {
-    val ex = Execute()
-    ex.execute()
+    val ex = BuilderExec()
+    ex.execute("html")
 }
