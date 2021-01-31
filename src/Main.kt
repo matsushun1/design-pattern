@@ -1,6 +1,6 @@
-import builder.text.BuilderExec
+import highOrderFunction.HighOrderFunction
 
 fun main(args: Array<String>) {
-    val ex = BuilderExec()
-    ex.execute("html")
+    HighOrderFunction().execute()
 }
+
