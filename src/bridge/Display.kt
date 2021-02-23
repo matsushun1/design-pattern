@@ -3,16 +3,18 @@ package bridge
 /**
  * 機能のクラス階層
  * DisplayのAPIがDisplayImplのAPIへ変換されている
+ * DisplayImplの各実装メソッドが使われている
+ * Kotlinの移譲を使うのもあり
  */
 open class Display(private val impl: DisplayImpl) {
     fun open() {
-        impl.rawOpen()
+        impl.rawOpen() // 移譲
     }
     fun print() {
-        impl.rawPrint()
+        impl.rawPrint() // 移譲
     }
     fun close() {
-        impl.rawClose()
+        impl.rawClose() // 移譲
     }
     fun display() {
         open()

@@ -31,6 +31,11 @@
     * インスタンス生成を制御する形式を決定するBuilder役クラスと、インスタンス作成過程を表現するDirector役クラスとを組み合わせる
     * Builderクラスを継承（実装）したサブクラスのインスタンスをDirectorがBuilderクラスとして受け取るため、サブクラスの交換可能性が明確になる
     * Template Methodはスーパークラスがサブクラスをコントロールする。BuilderはDirectorがBuilder役をコントロールする
-* Abstract Factory
+* Abstract Factory:
     * 関連するオブジェクト郡をまとめて生成するための手順の抽象化
     * 抽象的な部品と工場、またそれぞれに対応する具体的なクラスを用意する
+* Bridge:
+    * 機能と実装のクラス階層を分けることでソースコードの修正箇所を最小限するパターン。例えばあるプログラムにOS依存の箇所がある場合、実装クラス階層で表現する。
+    * Abstraction（抽象化）がImplementor（実装者）を保持する
+    * RefinedAbstraction（改善した抽象化）がAbstractionに機能追加したクラス
+    * ConcreteImplementorがImplementorのAPIを実装する

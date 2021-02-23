@@ -2,12 +2,13 @@ package bridge
 
 /**
  * Displayクラスに機能を拡張したクラス
+ * 継承することで機能を追加している
  */
 class CountDisplay(impl: DisplayImpl) : Display(impl) {
     // times回繰り返し表示する
     fun multiDisplay(times: Int) {
-        open()
-        for (i in 0..times) {
+        open() // 継承したメソッドを使って新しいメソッドを追加
+        for (i in 1..times) {
             print()
         }
         close()

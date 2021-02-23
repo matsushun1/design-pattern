@@ -1,6 +1,7 @@
+import bridge.Client
 import highOrderFunction.HighOrderFunction
 
 fun main(args: Array<String>) {
-    HighOrderFunction().execute()
+    Client().execute()
 }
 
