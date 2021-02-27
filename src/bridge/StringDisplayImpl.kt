@@ -3,16 +3,30 @@ package bridge
 /**
  * 実装のクラス階層
  */
-class StringDisplayImpl : DisplayImpl() {
+class StringDisplayImpl(private val string: String) : DisplayImpl {
+    private var width = 0
+
+    init {
+        width = string.toByteArray().size
+    }
+
     override fun rawOpen() {
-        TODO("Not yet implemented")
+        printLine()
     }
 
     override fun rawPrint() {
-        TODO("Not yet implemented")
+        println("|${string}|")
     }
 
     override fun rawClose() {
-        TODO("Not yet implemented")
+        printLine()
+    }
+
+    private fun printLine() {
+        print("+")
+        for (i in 1..width) {
+            print("-")
+        }
+        println("+")
     }
 }
