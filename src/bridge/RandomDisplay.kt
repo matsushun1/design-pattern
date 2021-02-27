@@ -1,12 +1,12 @@
 package bridge
 
-class RandomDisplay(impl: DisplayImpl): Display(impl) {
+class RandomDisplay(private val impl: DisplayImpl): Display(impl) {
     fun randomDisplay (times: Int) {
-        open()
+        impl.rawOpen()
         for (i in 0..(0..times).random()) {
-            print()
+            impl.rawPrint()
         }
-        close()
+        impl.rawClose()
     }
 
 }

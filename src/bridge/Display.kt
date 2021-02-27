@@ -6,19 +6,19 @@ package bridge
  * DisplayImplの各実装メソッドが使われている
  * Kotlinの移譲を使うのもあり
  */
-open class Display(private val impl: DisplayImpl) {
-    fun open() {
-        impl.rawOpen() // 移譲
-    }
-    fun print() {
-        impl.rawPrint() // 移譲
-    }
-    fun close() {
-        impl.rawClose() // 移譲
-    }
+open class Display(private val impl: DisplayImpl): DisplayImpl by impl {
+//    fun open() {
+//        impl.rawOpen() // 移譲
+//    }
+//    fun print() {
+//        impl.rawPrint() // 移譲
+//    }
+//    fun close() {
+//        impl.rawClose() // 移譲
+//    }
     fun display() {
-        open()
-        print()
-        close()
+        impl.rawOpen()
+        impl.rawPrint()
+        impl.rawClose()
     }
 }

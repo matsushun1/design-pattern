@@ -3,7 +3,7 @@ package bridge
 /**
  * 実装のクラス階層
  */
-class StringDisplayImpl(private val string: String) : DisplayImpl() {
+class StringDisplayImpl(private val string: String) : DisplayImpl {
     private var width = 0
 
     init {

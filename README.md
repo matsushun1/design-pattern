@@ -39,3 +39,6 @@
     * Abstraction（抽象化）がImplementor（実装者）を保持する
     * RefinedAbstraction（改善した抽象化）がAbstractionに機能追加したクラス
     * ConcreteImplementorがImplementorのAPIを実装する
+* Strategy:
+    * アルゴリズムなどのインターフェースを切り替えるパターン。
+    * 委譲を行うことでインターフェースの動的な切り替えを可能にする。
