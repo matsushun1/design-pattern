@@ -5,6 +5,7 @@ import strategy.WinningStrategy
 
 fun main(args: Array<String>) {
 
-    strategy.Client(0, 1).execute()
+    val decorator = decorator.Client()
+    decorator.execute()
 }
 

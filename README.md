@@ -42,3 +42,11 @@
 * Strategy:
     * アルゴリズムなどのインターフェースを切り替えるパターン。
     * 委譲を行うことでインターフェースの動的な切り替えを可能にする。
+* Composite:
+    * 容器と中身を同一視する再帰的構造を作るパターン。
+    * 複数個の物を集めてあたかも一つのように扱う。
+    * Leaf(中身)：他の物を入れられない役。
+    * Composite（複合体）：Leaf, Compositeを入れる。CompositeがCompositeをもつ再帰的構造である場合も想定される。
+    * Component：Leaf, Compositeを同一視するスーパークラス。
+* Decorator:
+    * 
