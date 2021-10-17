@@ -48,5 +48,5 @@
     * Leaf(中身)：他の物を入れられない役。
     * Composite（複合体）：Leaf, Compositeを入れる。CompositeがCompositeをもつ再帰的構造である場合も想定される。
     * Component：Leaf, Compositeを同一視するスーパークラス。
-* Decorator:
-    * 
+* Visitor:
+  * データ構造と処理を分離し、データ構造の中を渡り歩く「訪問者」を表すクラスを用意し、そのクラスに処理を任せる。

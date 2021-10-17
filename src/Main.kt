@@ -5,7 +5,7 @@ import strategy.WinningStrategy
 
 fun main(args: Array<String>) {
 
-    val decorator = decorator.Client()
-    decorator.execute()
+    val composite = composite.recursive.Client()
+    composite.execute()
 }
 
