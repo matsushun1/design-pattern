@@ -22,8 +22,10 @@ class Client {
 
         subGrandChildCompany.add(Department(name = "品質管理部", earnings = 100000, cost = 100, numOfWorkers = 10, workingTime = 3500))
 
-        println(parentCompany.getGrossProfit()) // ルートノードで集計
-        println(parentCompany.getProductivity())
+//        println(parentCompany.getGrossProfit()) // ルートノードで集計
+//        println(parentCompany.getProductivity())
         println(subGrandChildCompany.getProductivity()) // 末端ノードで集計
+        println(subGrandChildCompany.getDescendants())
+        println(subGrandChildCompany.getAllParents())
     }
 }

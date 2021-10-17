@@ -1,7 +1,8 @@
 package composite.recursive
 
 data class Department(
-    var name: String,
+    override var name: String,
+    override var parent: Component? = null,
     var earnings: Long,
     var cost: Long,
     var numOfWorkers: Long,
